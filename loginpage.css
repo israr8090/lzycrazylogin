@@ -6,7 +6,8 @@
 }
 
 .container-login {
-    background-color: rgb(193, 249, 249);
+    /* background-color: rgb(220, 217, 217); */
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 100vh;
     position: relative;
@@ -18,7 +19,8 @@
 
 /* -----main-login-page------------------ */
 .main-login-page {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(136, 94, 94); */
+    background-color: transparent;
     display: flex;
     align-items: start;
     /* justify-content: center; */
@@ -152,47 +154,53 @@
     /* margin: 2px auto; */
     padding: 12px;
 }
+
 .login-btn:hover {
     background-color: #267aef;
 }
 
-.button-signup-forgetpassword{
+.button-signup-forgetpassword {
     /* background-color:rgb(156, 192, 243); */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.button-signup-forgetpassword a{
-    /* background-color:rgb(243, 163, 156); */
-    border-bottom: 1px solid rgb(182, 182, 182);
-    text-decoration: none;
-    width: 100%;
-    color: black;
+
+.foget-password-btn{
+    background-color:rgb(255, 255, 255);
+    border: none;
+    color: rgb(27, 27, 109);
     margin: 10px 0px 15px 0px;
-    padding: 10px 0px;
     font-size: 14px;
 }
-.button-signup-forgetpassword button{
-    background-color:rgb(74, 205, 47);
+
+.foget-password-btn:hover {
+    text-decoration: underline rgb(27, 27, 109);   
+ }
+
+.create-account {
+    background-color: rgb(34, 135, 14);
     /* border-bottom: 1px solid black; */
     /* text-decoration: none; */
     border: none;
     border-radius: 5px;
-    width:100%;
+    width: 100%;
     color: #ffffff;
     margin: 10px;
     padding: 10px;
     font-size: 17px;
     font-weight: bold;
 }
-.button-signup-forgetpassword button:hover{
-    background-color:rgb(57, 183, 32);
+
+.create-account:hover {
+    background-color: rgb(41, 160, 18);
 }
 
 /* -------footer------------- */
 .footer-login {
-    background-color: black;
-    color: white;
+    /* border-top: 1px solid rgb(186, 181, 181); */
+    background-color: #ffffff;
+    box-shadow: 0px 0px 1px 1px rgb(197, 194, 194);
     position: fixed;
     width: 100%;
     bottom: 0px;
@@ -202,9 +210,73 @@
 }
 
 .footer-login a {
-    background-color: rgb(250, 221, 221);
+    /* background-color: rgb(250, 221, 221); */
     text-decoration: none;
-    padding: 2px 10px;
-    margin: 15px 10px;
+    padding: 2px 2px;
+    margin: 10px 5px;
     color: black;
+    font-weight: 550;
+    font-size: 14px;
+}
+
+/* ---------font running---------------- */
+#scroll-container {
+    /* border: 1px solid rgb(237, 31, 31); */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#scroll-container:hover {
+    /* border: 1px solid rgb(237, 31, 31); */
+    background-color: #f2f3f3;
+    /* border-radius: 5px; */
+    /* overflow: hidden; */
+}
+
+#scroll-text {
+    /* animation properties */
+    color: rgb(29, 12, 119);
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+
+    -moz-animation: my-animation 5s linear infinite;
+    -webkit-animation: my-animation 5s linear infinite;
+    animation: my-animation 5s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+    }
+
+    to {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from {
+        -webkit-transform: translateX(100%);
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
 }

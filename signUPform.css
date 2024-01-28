@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+    /* background-color: rgb(171, 85, 168); */
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: -15px;
+    z-index: 4;
+    display: none;
+}
+
+.container-signup-form {
+    background-color: rgb(243, 240, 240);
+    box-shadow: 0px 0px 2px 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.titel-and-close-btn {
+    /* background-color: rgb(185, 238, 157); */
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    padding-bottom: 5px;
+}
+
+.container-signup-form h2 {
+    /* background-color: rgb(255, 119, 0); */
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(22, 22, 91);
+}
+
+.container-signup-form button {
+    /* background-color: rgb(0, 255, 17); */
+    background-color: transparent;
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+}
+
+.signup-main-form {
+    /* background-color: rgb(239, 141, 48); */
+    /* border: 1px solidd black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
+    /* overflow-y: scroll; */
+}
+
+
+/* -------------------------------- */
+.main-form-inputs {
+    /* background-color: rgb(170, 165, 245); */
+    padding: 5px;
+}
+
+.fname-lname {
+    /* background-color: rgb(245, 165, 221); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fname-lname input {
+    /* background-color: rgb(206, 242, 198); */
+    border: 1px solid rgb(4, 4, 4);
+    border-radius: 5px;
+    width: 46%;
+    padding: 8px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.emailclass {
+    /* background-color: rgb(201, 212, 0); */
+}
+
+.emailclass input {
+    /* background-color: rgb(206, 242, 198); */
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 95%;
+    padding: 8px;
+    margin: 10px 5px;
+    font-size: 16px;
+}
+
+.mobile-gender {
+    /* background-color: rgb(245, 165, 221); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-gender input,
+.gender-section {
+    /* background-color: rgb(206, 242, 198); */
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 46%;
+    padding: 8px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.gender-section {
+    /* background-color: rgb(206, 242, 198); */
+    border: none;
+    border-radius: 5px;
+    width: 46%;
+    padding: 8px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+.gender-section select {
+    /* background-color: rgb(93, 237, 61); */
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 70%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.date-of-birth {
+    /* background-color: rgb(107, 77, 177); */
+}
+
+.date-of-birth label {
+    /* background-color: rgb(117, 195, 98); */
+    padding-left: 5px;
+    color: black;
+    font-size: 17px;
+}
+
+.date-of-birth input {
+    /* background-color: rgb(206, 242, 198); */
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    width: 30%;
+    padding: 8px;
+    margin: 8px 5px;
+    font-size: 16px;
+}
+
+.country-state-city {
+    /* background-color: rgb(126, 174, 245); */
+    margin-block: 5px;
+}
+
+.country-state-city label {
+    /* background-color: rgb(39, 220, 69); */
+    padding-left: 5px;
+    color: black;
+    font-size: 17px;
+}
+
+.country-state-city select{
+    /* background-color: rgb(179, 180, 178); */
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 113px;
+    padding: 8px;
+    margin: 8px 5px;
+    font-size: 16px;
+}
+
+.passwordclass {
+    /* background-color: rgb(74, 186, 126); */
+}
+
+.passwordclass input {
+    /* background-color: rgb(206, 242, 198); */
+    border: 1px solid rgb(3, 3, 3);
+    border-radius: 5px;
+    width: 46%;
+    padding: 8px;
+    margin: 8px 5px;
+    font-size: 16px;
+}
+
+.btn-submit-section {
+    /* background-color: rgb(136, 217, 141); */
+    margin-block: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button {
+    background-color: rgb(35, 36, 110);
+    color: white;
+    border: 1px solidd blue;
+    border-radius: 8px;
+    padding: 8px;
+    width: 40%;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    color: rgb(35, 36, 110);
+    background-color: white;
+}
+
+.text-contents {
+    /* background-color: aqua; */
+
+}
+
+.text-contents p {
+    /* background-color: rgb(255, 128, 0); */
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 14px;
+}

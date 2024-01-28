@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-forgotton-password {
+    /* background-color:rgb(255, 255, 255); */
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: 150px;
+    /* left: 0px; */
+    z-index: 6;
+    display: none;
+}
+
+.main-section-forgotton {
+    background-color: rgb(254, 253, 253);
+    box-shadow: 0px 0px 2px 1px black;
+    /* border: 1px solid black; */
+    padding: 2px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+
+.main-section-forgotton-header {
+    /* background-color: transparent; */
+    border-bottom: 1px solid rgb(144, 139, 139);
+    width: 100%;
+    margin: 5px;
+    padding: 5px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-section-forgotton-header h4 {
+    /* background-color: rgb(0, 204, 255); */
+    font-size: 20px;
+    color: rgb(24, 24, 89);
+}
+
+.main-section-forgotton-header button {
+    /* background-color: rgb(162, 255, 0); */
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.forgotton-form-section {
+    /* background-color: rgb(198, 45, 253); */
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    margin: 15px 3px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.forgotton-form-section label {
+    /* background-color: rgb(184, 253, 45); */
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+}
+
+.forgotton-form-section input {
+    /* background-color: rgb(184, 253, 45); */
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+
+.forgotton-form-section p {
+    padding: 2px;
+    font-size: 12px;
+    color: rgb(73, 73, 73);
+}
+.forgotton-form-section button {
+    background-color: green;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    width: 50%;
+    padding: 2px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+.forgotton-form-section button:hover {
+    background-color: rgb(6, 147, 6);
+    color: rgb(255, 255, 255);
+}
