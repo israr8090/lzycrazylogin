@@ -51,22 +51,27 @@
                     </div>
 
                     <div class="country-state-city">
-                        <label for="country">Country:</label>
-                        <select name="country" id="">
-                            <option value="india">India</option>
-                        </select>
-
-                        <label for="state">State:</label>
-                        <select onchange="print_city('state', this.selectedIndex);" id="sts" name="stt" required></select>
-
-                        <label for="state">City:</label>
-                        <select id="state" required></select>
+                        <div class="label-input-flex">
+                            <label for="country">Country:</label>
+                            <select name="country" id="">
+                                <option value="india">India</option>
+                            </select>
+                        </div>
+                        
+                        <div class="label-input-flex">
+                            <label for="state">State:</label>
+                            <select onchange="print_city('state', this.selectedIndex);" id="sts" name="stt" required></select>
+                        </div>
+                        <div class="label-input-flex">
+                            <label for="state">City:</label>
+                            <select id="state" required></select>
+                        </div>
                     </div>
 
                     <div class="passwordclass">
                         <input type="password" placeholder="Password" required>
                         <input type="password" placeholder="Confirm Password" required>
-                    </div>                 
+                    </div>
 
                     <div class="btn-submit-section">
                         <input type="submit" value="Sign Up" class="submit-button">

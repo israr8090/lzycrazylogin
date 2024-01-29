@@ -54,7 +54,7 @@
                         <input type="tel" placeholder="Mobile Number" required>
 
                         <div class="gender-section">
-                            <label for="Gender">Gender</label>
+                            <label for="Gender">Gender:</label>
                             <select name="Gender" id="" required>
                                 <option value="select">Select</option>
                                 <option value="male">Male</option>
@@ -71,17 +71,21 @@
                     </div>
 
                     <div class="country-state-city">
-                        <label for="country">Country:</label>
-                        <select name="country" id="">
-                            <option value="india">India</option>
-                        </select>
-
-                        <label for="state">State:</label>
-                        <select onchange="print_city('state', this.selectedIndex);" id="sts" name="stt"
-                            required></select>
-
-                        <label for="state">City:</label>
-                        <select id="state" required></select>
+                        <div class="label-input-flex">
+                            <label for="country">Country:</label>
+                            <select name="country" id="">
+                                <option value="india">India</option>
+                            </select>
+                        </div>
+                        
+                        <div class="label-input-flex">
+                            <label for="state">State:</label>
+                            <select onchange="print_city('state', this.selectedIndex);" id="sts" name="stt" required></select>
+                        </div>
+                        <div class="label-input-flex">
+                            <label for="state">City:</label>
+                            <select id="state" required></select>
+                        </div>
                     </div>
 
                     <div class="passwordclass">
@@ -103,11 +107,11 @@
         </div>
     </div>
 
-<!-- main-page of login page----------------------------------- -->
+    <!-- main-page of login page----------------------------------- -->
     <div class="container-login">
         <div class="main-login-page">
             <div class="main-logo-search">
-                <img src="/images/logo" alt="logo">
+                <img src="/images/logo2.png" alt="logo">
                 <div class="input-search">
                     <input type="text" name="" id="" placeholder="lzycrazy Search Comming Soon">
                     <a href=""><i class="fa-solid fa-magnifying-glass search-icon-size-color"></i></a>

@@ -29,6 +29,8 @@
     margin: 30px;
     padding: 10px;
     border-radius: 10px;
+    /* height: 100vh;
+    overflow: scroll; */
 }
 
 .titel-and-close-btn {
@@ -116,8 +118,7 @@
     justify-content: space-between;
 }
 
-.mobile-gender input,
-.gender-section {
+.mobile-gender input {
     /* background-color: rgb(206, 242, 198); */
     border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
@@ -170,22 +171,32 @@
 .country-state-city {
     /* background-color: rgb(126, 174, 245); */
     margin-block: 5px;
+    display: flex;
+    /* width: 95%; */
 }
 
-.country-state-city label {
+.label-input-flex {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+}
+
+.label-input-flex label {
     /* background-color: rgb(39, 220, 69); */
     padding-left: 5px;
     color: black;
     font-size: 17px;
 }
 
-.country-state-city select{
+.label-input-flex select {
     /* background-color: rgb(179, 180, 178); */
     border: 1px solid black;
     border-radius: 5px;
-    width: 113px;
+    width: 95%;
     padding: 8px;
-    margin: 8px 5px;
+    margin: 0px 5px;
     font-size: 16px;
 }
 
@@ -214,7 +225,7 @@
 .submit-button {
     background-color: rgb(35, 36, 110);
     color: white;
-    border: 1px solidd blue;
+    border: 1px solid blue;
     border-radius: 8px;
     padding: 8px;
     width: 40%;
@@ -239,4 +250,146 @@
     margin-bottom: 0px;
     text-align: center;
     font-size: 14px;
+}
+
+/* ---------------media Query--------------- */
+@media only screen and (max-width : 1280px) {
+    .main-container {
+        position: fixed;
+        top: 40px;
+    }
+}
+
+@media only screen and (max-width : 500px) {
+    .main-container {
+        position: fixed;
+        top: 90px;
+    }
+
+    .fname-lname input {
+        /* background-color: rgb(206, 242, 198); */
+        border: 1px solid rgb(4, 4, 4);
+        border-radius: 5px;
+        width: 46%;
+        padding: 8px;
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .emailclass input {
+        /* background-color: rgb(206, 242, 198); */
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        width: 95%;
+        padding: 8px;
+        margin: 10px 5px;
+        font-size: 13px;
+    }
+
+    .mobile-gender input {
+        /* background-color: rgb(206, 242, 198); */
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        width: 40%;
+        padding: 8px;
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .gender-section label {
+        padding-right: 5px;
+    }
+
+    .gender-section {
+        /* background-color: rgb(206, 242, 198); */
+        border: none;
+        border-radius: 5px;
+        width: 58%;
+        padding: 8px;
+        margin: 5px;
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+    }
+
+    .date-of-birth label {
+        /* background-color: rgb(117, 195, 98); */
+        padding-left: 5px;
+        color: black;
+        font-size: 12px;
+    }
+
+    .date-of-birth input {
+        /* background-color: rgb(206, 242, 198); */
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        width: 40%;
+        padding: 8px;
+        margin: 8px 0px;
+        font-size: 13px;
+    }
+
+
+    .label-input-flex {
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: start;
+    }
+
+    .label-input-flex label {
+        /* background-color: rgb(39, 220, 69); */
+        padding-left: 5px;
+        color: black;
+        font-size: 12px;
+    }
+
+    .label-input-flex select {
+        /* background-color: rgb(179, 180, 178); */
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 95%;
+        padding: 8px;
+        margin: 0px 5px;
+        font-size: 13px;
+    }
+
+    .passwordclass input {
+        /* background-color: rgb(206, 242, 198); */
+        border: 1px solid rgb(3, 3, 3);
+        border-radius: 5px;
+        width: 45%;
+        padding: 8px;
+        margin: 8px 5px;
+        font-size: 13px;
+    }
+
+    .submit-button {
+        background-color: rgb(35, 36, 110);
+        color: white;
+        border: 1px solid blue;
+        border-radius: 8px;
+        padding: 8px;
+        width: 50%;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        cursor: pointer;
+    }
+
+    .text-contents p {
+        /* background-color: rgb(255, 128, 0); */
+        margin-bottom: 0px;
+        text-align: center;
+        font-size: 9px;
+    }
+
+}
+
+@media only screen and (max-width : 400px) {
+    .main-container {
+        position: fixed;
+        top: 30px;
+    }
 }
